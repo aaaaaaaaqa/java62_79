@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+var r_okr=prompt("Podaj r","");
+var r=parseFloat(r_okr);
+var j_okr = 0;
+var d_okr = 0;
+for (var i=Math.round(-r)-1; i<=Math.round(r)+1; i++)
+{
+for (var k=-r; k<=r; k++)
+{
+d_okr = Math.sqrt(i*i+k*k);
+if (d_okr <= r)
+{
+j_okr++;
+document.write("d="+d_okr.toFixed(2)+"<br>");
+document.write("("+i+","+k+")"+"    ");
+document.write("<br>");
+}
+}
+}
+document.write("<font size=\"20px\";>Ilość punktów: "+j_but);
+</script>
+</head>
+<body>
+</body>
+</html>
