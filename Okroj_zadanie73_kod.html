@@ -1,0 +1,41 @@
+<textarea rows="40" cols="110" readonly="readonly" style=" resize: none;">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title> Przykład użycia pętli </title>
+<script language="JavaScript">
+
+var imie=prompt("podaj swoje imie ","");
+var nazwisko=prompt("podaj swoje nazwisko ","");
+
+var a_okr=(nazwisko.length)%4+5;
+var b_okr=(imie.length)%6+20;
+
+
+for (var i = 0; i < b_okr; i++)
+{
+document.write("*");
+}
+document.write("<br>");
+
+for (var j = 0; j < (a_okr - 2);j++)
+    {
+    	document.write("*");
+        document.write("&nbsp&nbsp".repeat(b_okr-2));
+		document.write("*");
+		document.write("<br>");
+    }
+
+
+    for (var a = 0; a < b_okr;a++)
+    {
+        document.write("*");
+    }
+  
+
+</script>
+</head>
+<body>
+</body>
+</html>
